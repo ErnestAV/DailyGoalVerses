@@ -85,7 +85,7 @@ public class Main {
 
             boolean validType = false;
 
-            while (validType != true) {
+            while (!validType) {
                 if (!timeOfDay.equalsIgnoreCase("am")) {
                     if (!timeOfDay.equalsIgnoreCase("pm")) {
                         System.out.println("Error. Please enter a valid time: ");
@@ -135,10 +135,8 @@ public class Main {
     private static ScriptureBook getRandomBook() {
 
         Random randomBook = new Random();
-        int max = 14;
-        int min = 1;
 
-        return allBooks.get(randomBook.nextInt((max - min) + 1) + min);
+        return allBooks.get(randomBook.nextInt(15));
     }
 
     private static int getRandomChapter(ScriptureBook scriptureBook) {
