@@ -62,6 +62,7 @@ public class Main {
 
             System.out.println("Hour (1 through 12): ");
             hour = keyboard.nextInt();
+
             while (hour < 1 || hour > 12) {
                 System.out.println("Error. Please enter a valid hour: ");
                 System.out.println("Hour (1 through 12):");
@@ -134,7 +135,7 @@ public class Main {
     private static ScriptureBook getRandomBook() {
 
         Random randomBook = new Random();
-        int max = 15;
+        int max = 14;
         int min = 1;
 
         return allBooks.get(randomBook.nextInt((max - min) + 1) + min);
