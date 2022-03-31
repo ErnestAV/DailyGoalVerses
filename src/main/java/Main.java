@@ -22,7 +22,6 @@ public class Main {
     static Scanner keyboard = new Scanner(System.in);
     static List<UserTime> availableTimes = new ArrayList<>();
 
-
     public static void main(String[] args) {
         addAllBooks();
 
@@ -135,7 +134,7 @@ public class Main {
     private static ScriptureBook getRandomBook() {
 
         Random randomNumber = new Random();
-        int max = 14;
+        int max = 15;
         int min = 1;
 
         int randomNum = randomNumber.nextInt((max - min) + 1) + min;
