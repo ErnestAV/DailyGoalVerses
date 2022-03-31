@@ -41,13 +41,13 @@ public class Main {
             int randomVerse = getRandomVerse(randomBook, randomChapter);
 
             if (t.getMinute() == 0) {
-                System.out.println("At " + t.getHour() + ":" + t.getMinute() + "0 " + t.getTimeOfDay() + " -- read: " + randomBook.getName() + " " + randomChapter);
+                System.out.println("At " + t.getHour() + ":" + t.getMinute() + "0 " + t.getTimeOfDay() + " -- read: " + randomBook.getName() + " " + randomChapter + ":" + randomVerse);
             }
             else if (t.getMinute() < 10) {
-                System.out.println("At " + t.getHour() + ":0" + t.getMinute() + " " + t.getTimeOfDay() + " -- read: " + randomBook.getName() +  " " + randomChapter);
+                System.out.println("At " + t.getHour() + ":0" + t.getMinute() + " " + t.getTimeOfDay() + " -- read: " + randomBook.getName() +  " " + randomChapter + ":" + randomVerse);
             }
             else {
-                System.out.println("At " + t.getHour() + ":" + t.getMinute() + " " + t.getTimeOfDay() + " -- read: " + randomBook.getName() + " " + randomChapter);
+                System.out.println("At " + t.getHour() + ":" + t.getMinute() + " " + t.getTimeOfDay() + " -- read: " + randomBook.getName() + " " + randomChapter + ":" + randomVerse);
             }
         }
     }
@@ -133,27 +133,75 @@ public class Main {
 
     private static ScriptureBook getRandomBook() {
 
-        Random randomNumber = new Random();
+        Random randomBook = new Random();
         int max = 15;
         int min = 1;
 
-        int randomNum = randomNumber.nextInt((max - min) + 1) + min;
-
-        return allBooks.get(randomNum);
+        return allBooks.get(randomBook.nextInt((max - min) + 1) + min);
     }
 
     private static int getRandomChapter(ScriptureBook scriptureBook) {
-        Random randomNumber = new Random();
+        Random randomChapter = new Random();
 
         int max = scriptureBook.getNumberOfChapters();
         int min = 1;
 
-        int randomNum = randomNumber.nextInt((max - min) + 1) + min;
-
-        return randomNum;
+        return randomChapter.nextInt((max - min) + 1) + min;
     }
 
     private static int getRandomVerse(ScriptureBook scriptureBook, int chapter) {
-        return 0;
+        Map<Integer, Integer> chaptersVersesMap = new HashMap<>();
+        Random randomVerse = new Random();
+
+        if (scriptureBook.getName().equalsIgnoreCase("1 Nephi")) {
+            chaptersVersesMap = scriptureBook.getFirstNephi();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("2 Nephi")) {
+            chaptersVersesMap = scriptureBook.getSecondNephi();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Jacob")) {
+            chaptersVersesMap = scriptureBook.getJacob();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Enos")) {
+            chaptersVersesMap = scriptureBook.getEnos();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Jarom")) {
+            chaptersVersesMap = scriptureBook.getJarom();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Omni")) {
+            chaptersVersesMap = scriptureBook.getOmni();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Words of Mormon")) {
+            chaptersVersesMap = scriptureBook.getWordsOfMormon();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Mosiah")) {
+            chaptersVersesMap = scriptureBook.getMosiah();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Alma")) {
+            chaptersVersesMap = scriptureBook.getAlma();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Helaman")) {
+            chaptersVersesMap = scriptureBook.getFirstNephi();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("3 Nephi")) {
+            chaptersVersesMap = scriptureBook.getHelaman();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("4 Nephi")) {
+            chaptersVersesMap = scriptureBook.getFourthNephi();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Mormon")) {
+            chaptersVersesMap = scriptureBook.getMormon();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Ether")) {
+            chaptersVersesMap = scriptureBook.getEther();
+        }
+        if (scriptureBook.getName().equalsIgnoreCase("Moroni")) {
+            chaptersVersesMap = scriptureBook.getMoroni();
+        }
+
+        int max = chaptersVersesMap.get(chapter);
+        int min = 1;
+
+        return randomVerse.nextInt((max - min) + 1) + min;
     }
 }

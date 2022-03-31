@@ -4,6 +4,7 @@ import java.util.Map;
 public class ScriptureBook {
     String name;
     int numberOfChapters;
+
     Map<Integer, Integer> firstNephi = new HashMap<>();
     Map<Integer, Integer> secondNephi = new HashMap<>();
     Map<Integer, Integer> jacob = new HashMap<>();
@@ -33,6 +34,66 @@ public class ScriptureBook {
 
     public int getNumberOfChapters() {
         return numberOfChapters;
+    }
+
+    public Map<Integer, Integer> getFirstNephi() {
+        return firstNephi;
+    }
+
+    public Map<Integer, Integer> getSecondNephi() {
+        return secondNephi;
+    }
+
+    public Map<Integer, Integer> getJacob() {
+        return jacob;
+    }
+
+    public Map<Integer, Integer> getEnos() {
+        return enos;
+    }
+
+    public Map<Integer, Integer> getJarom() {
+        return jarom;
+    }
+
+    public Map<Integer, Integer> getOmni() {
+        return omni;
+    }
+
+    public Map<Integer, Integer> getWordsOfMormon() {
+        return wordsOfMormon;
+    }
+
+    public Map<Integer, Integer> getMosiah() {
+        return mosiah;
+    }
+
+    public Map<Integer, Integer> getAlma() {
+        return alma;
+    }
+
+    public Map<Integer, Integer> getHelaman() {
+        return helaman;
+    }
+
+    public Map<Integer, Integer> getThirdNephi() {
+        return thirdNephi;
+    }
+
+    public Map<Integer, Integer> getFourthNephi() {
+        return fourthNephi;
+    }
+
+    public Map<Integer, Integer> getMormon() {
+        return mormon;
+    }
+
+    public Map<Integer, Integer> getEther() {
+        return ether;
+    }
+
+    public Map<Integer, Integer> getMoroni() {
+        return moroni;
     }
 
     public void populateChapters() {
