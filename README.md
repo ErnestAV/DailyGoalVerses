@@ -1,0 +1,2 @@
+# DailyGoalVerses
+This is a creative project for REL A 121 under Dr. Hank Smith. This tool is aimed to help anyone trying to get into a habit of studying scripture (more specifically, Book of Mormon), to get a daily goal of verses to read. Users just enter their available times during the day, and they get 5 verses to read at their available times. Overtime, the goal is to get into the habit of studying scripture daily.
