@@ -148,8 +148,71 @@ public class ScriptureBook {
         mosiah.put(28, 20);
         mosiah.put(29, 47);
 
-        //TODO: Populate Alma
         // Alma
+        alma.put(1, 33);
+        alma.put(2, 38);
+        alma.put(3, 27);
+        alma.put(4, 20);
+        alma.put(5, 62);
+        alma.put(6, 8);
+        alma.put(7, 27);
+        alma.put(8, 32);
+        alma.put(9, 34);
+        alma.put(10, 32);
+        alma.put(11, 46);
+        alma.put(12, 37);
+        alma.put(13, 31);
+        alma.put(14, 29);
+        alma.put(15, 19);
+        alma.put(16, 21);
+        alma.put(17, 39);
+        alma.put(18, 43);
+        alma.put(19, 36);
+        alma.put(20, 30);
+        alma.put(21, 23);
+        alma.put(22, 34);
+        alma.put(23, 18);
+        alma.put(24, 30);
+        alma.put(25, 17);
+        alma.put(26, 37);
+        alma.put(27, 30);
+        alma.put(28, 14);
+        alma.put(29, 17);
+        alma.put(30, 60);
+        alma.put(31, 38);
+        alma.put(32, 43);
+        alma.put(33, 23);
+        alma.put(34, 41);
+        alma.put(35, 16);
+        alma.put(36, 30);
+        alma.put(37, 47);
+        alma.put(38, 15);
+        alma.put(39, 19);
+        alma.put(40, 26);
+        alma.put(41, 15);
+        alma.put(42, 31);
+        alma.put(43, 54);
+        alma.put(44, 24);
+        alma.put(45, 24);
+        alma.put(46, 41);
+        alma.put(47, 36);
+        alma.put(48, 25);
+        alma.put(49, 30);
+        alma.put(50, 40);
+        alma.put(51, 37);
+        alma.put(52, 40);
+        alma.put(53, 23);
+        alma.put(54, 24);
+        alma.put(55, 35);
+        alma.put(56, 57);
+        alma.put(57, 36);
+        alma.put(58, 41);
+        alma.put(59, 13);
+        alma.put(60, 26);
+        alma.put(61, 21);
+        alma.put(62, 52);
+        alma.put(63, 17);
+
         //TODO: Populate Helaman
         // Helaman
         //TODO: Populate 3 Nephi
