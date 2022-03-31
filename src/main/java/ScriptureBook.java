@@ -213,10 +213,55 @@ public class ScriptureBook {
         alma.put(62, 52);
         alma.put(63, 17);
 
-        //TODO: Populate Helaman
         // Helaman
-        //TODO: Populate 3 Nephi
+        helaman.put(1, 34);
+        helaman.put(2, 14);
+        helaman.put(3, 37);
+        helaman.put(4, 26);
+        helaman.put(5, 52);
+        helaman.put(6, 41);
+        helaman.put(7, 29);
+        helaman.put(8, 28);
+        helaman.put(9, 41);
+        helaman.put(10, 19);
+        helaman.put(11, 38);
+        helaman.put(12, 26);
+        helaman.put(13, 39);
+        helaman.put(14, 31);
+        helaman.put(15, 17);
+        helaman.put(16, 25);
+
         // 3 Nephi
+        thirdNephi.put(1, 30);
+        thirdNephi.put(2, 19);
+        thirdNephi.put(3, 26);
+        thirdNephi.put(4, 33);
+        thirdNephi.put(5, 26);
+        thirdNephi.put(6, 30);
+        thirdNephi.put(7, 26);
+        thirdNephi.put(8, 25);
+        thirdNephi.put(9, 22);
+        thirdNephi.put(10, 19);
+        thirdNephi.put(11, 41);
+        thirdNephi.put(12, 48);
+        thirdNephi.put(13, 34);
+        thirdNephi.put(14, 27);
+        thirdNephi.put(15, 24);
+        thirdNephi.put(16, 20);
+        thirdNephi.put(17, 25);
+        thirdNephi.put(18, 39);
+        thirdNephi.put(19, 36);
+        thirdNephi.put(20, 46);
+        thirdNephi.put(21, 29);
+        thirdNephi.put(22, 17);
+        thirdNephi.put(23, 14);
+        thirdNephi.put(24, 18);
+        thirdNephi.put(25, 6);
+        thirdNephi.put(26, 21);
+        thirdNephi.put(27, 33);
+        thirdNephi.put(28, 40);
+        thirdNephi.put(29, 9);
+        thirdNephi.put(30, 2);
 
         // 4 Nephi
         fourthNephi.put(1, 49);
@@ -232,8 +277,22 @@ public class ScriptureBook {
         mormon.put(8, 41);
         mormon.put(9, 37);
 
-        //TODO: Populate Ether
         // Ether
+        ether.put(1, 43);
+        ether.put(2, 25);
+        ether.put(3, 28);
+        ether.put(4, 19);
+        ether.put(5, 6);
+        ether.put(6, 30);
+        ether.put(7, 27);
+        ether.put(8, 26);
+        ether.put(9, 35);
+        ether.put(10, 34);
+        ether.put(11, 23);
+        ether.put(12, 41);
+        ether.put(13, 31);
+        ether.put(14, 31);
+        ether.put(15, 34);
 
         // Moroni
         moroni.put(1, 4);
@@ -245,7 +304,6 @@ public class ScriptureBook {
         moroni.put(7, 48);
         moroni.put(8, 30);
         moroni.put(9, 26);
-        moroni.put(9, 34);
+        moroni.put(10, 34);
     }
-
 }
